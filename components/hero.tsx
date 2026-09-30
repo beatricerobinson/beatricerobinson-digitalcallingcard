@@ -34,7 +34,6 @@ export function Hero() {
   Beatrice J. Robinson
   </h1>
 
-  <p className="mt-3 text-base text-muted-foreground md:text-lg">Thank you for stopping by.</p>
   
           <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-primary md:text-base">
             {roles.map((role, i) => (
