@@ -35,7 +35,7 @@ export function Impact() {
           {stats.map((stat, i) => (
             <li key={stat.value} className="bg-ink">
               <Reveal delay={i * 100} className="flex h-full flex-col p-6 md:p-8">
-                <p className="text-4xl font-semibold tracking-tight text-[oklch(0.8_0.1_190)] md:text-5xl">
+                <p className="text-4xl font-semibold tracking-tight text-[oklch(0.78_0.12_255)] md:text-5xl">
                   {stat.value}
                 </p>
                 <span aria-hidden="true" className="my-5 h-px w-10 bg-ink-foreground/25" />

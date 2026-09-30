@@ -56,7 +56,7 @@ export function NetworkBackground() {
           const dist = Math.hypot(dx, dy)
           if (dist < LINK_DISTANCE) {
             const alpha = (1 - dist / LINK_DISTANCE) * 0.28
-            ctx.strokeStyle = `rgba(22, 120, 128, ${alpha})`
+            ctx.strokeStyle = `rgba(37, 99, 235, ${alpha})`
             ctx.lineWidth = 0.8
             ctx.beginPath()
             ctx.moveTo(a.x, a.y)
@@ -68,12 +68,12 @@ export function NetworkBackground() {
 
       for (const n of nodes) {
         const near = Math.hypot(n.x - pointer.x, n.y - pointer.y) < 120
-        ctx.fillStyle = n.hub || near ? 'rgba(22, 120, 128, 0.85)' : 'rgba(40, 55, 80, 0.45)'
+        ctx.fillStyle = n.hub || near ? 'rgba(37, 99, 235, 0.85)' : 'rgba(40, 55, 80, 0.45)'
         ctx.beginPath()
         ctx.arc(n.x, n.y, near ? n.r + 1 : n.r, 0, Math.PI * 2)
         ctx.fill()
         if (n.hub) {
-          ctx.strokeStyle = 'rgba(22, 120, 128, 0.18)'
+          ctx.strokeStyle = 'rgba(37, 99, 235, 0.18)'
           ctx.beginPath()
           ctx.arc(n.x, n.y, n.r + 5, 0, Math.PI * 2)
           ctx.stroke()

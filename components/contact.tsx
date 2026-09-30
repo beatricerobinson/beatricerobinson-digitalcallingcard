@@ -15,7 +15,7 @@ export function Contact() {
             className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:radial-gradient(currentColor_1px,transparent_1px)] [background-size:22px_22px]"
           />
           <div className="relative mx-auto max-w-2xl">
-            <p className="mb-4 font-mono text-xs tracking-widest text-[oklch(0.8_0.1_190)] uppercase">
+            <p className="mb-4 font-mono text-xs tracking-widest text-[oklch(0.78_0.12_255)] uppercase">
               07 — Contact
             </p>
             <h2 id="contact-title" className="text-3xl font-semibold tracking-tight text-balance md:text-5xl">
