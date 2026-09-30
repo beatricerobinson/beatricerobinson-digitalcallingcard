@@ -3,7 +3,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
-import { FunnelVisual, ChartVisual } from '@/components/project-visuals'
+import { FunnelVisual } from '@/components/project-visuals'
 import { GITHUB_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -15,20 +15,9 @@ const projects = [
       'Interactive simulation exploring how sequential recruitment stages can influence candidate progression and outcomes.',
     tech: ['HTML', 'JavaScript', 'Data Modeling', 'Simulation'],
     cta: 'View Project',
-    href: GITHUB_URL,
+    href: 'https://beatricerobinson.github.io/recruitment-disparity-simulator',
     github: false,
     Visual: FunnelVisual,
-  },
-  {
-    title: 'Healthcare Data Analysis with R',
-    category: 'Data Analytics Project',
-    description:
-      'Analysis of CDC Chronic Disease Indicators data examining adult asthma patterns across demographic and geographic dimensions.',
-    tech: ['R', 'RStudio', 'dplyr', 'ggplot2'],
-    cta: 'View on GitHub',
-    href: GITHUB_URL,
-    github: true,
-    Visual: ChartVisual,
   },
 ]
 
@@ -50,15 +39,15 @@ export function Projects() {
           </a>
         </div>
 
-        <ul className="grid gap-6 lg:grid-cols-2">
+        <ul className="flex flex-col gap-6">
           {projects.map((project, i) => (
             <li key={project.title}>
               <Reveal delay={i * 120} className="h-full">
-                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5">
-                  <div className="relative aspect-[16/8] overflow-hidden border-b border-border bg-secondary/60">
+                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 lg:flex-row">
+                  <div className="relative aspect-[16/8] overflow-hidden border-b border-border bg-secondary/60 lg:aspect-auto lg:min-h-80 lg:w-1/2 lg:border-r lg:border-b-0">
                     <project.Visual />
                   </div>
-                  <div className="flex flex-1 flex-col p-6 md:p-8">
+                  <div className="flex flex-1 flex-col p-6 md:p-10">
                     <p className="mb-3 font-mono text-xs tracking-widest text-primary uppercase">
                       {project.category}
                     </p>
