@@ -5,7 +5,8 @@ import { NetworkBackground } from '@/components/network-background'
 import { GITHUB_URL, MAILTO } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
-const roles = ['AI Project Builder', 'Data Analytics', 'Healthcare & Workforce Analytics']
+const roles = ['Data Analytics & Program Operation'Healthcare & Workforce Analytics'
+Compliance & AI']
 
 export function Hero() {
   return (
@@ -45,8 +46,7 @@ export function Hero() {
           </p>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground md:text-xl">
-            Building data-driven solutions that connect healthcare operations, analytics, and
-            emerging AI technology.
+            Building data-driven solutions through healthcare, compliance, workforce analytics, program operations, and emerging AI technology.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
