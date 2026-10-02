@@ -5,8 +5,11 @@ import { NetworkBackground } from '@/components/network-background'
 import { GITHUB_URL, MAILTO } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
-const roles = ['Data Analytics & Program Operation'Healthcare & Workforce Analytics'
-Compliance & AI']
+const roles = [
+  'Data Analytics & Program Operations',
+  'Healthcare & Workforce Analytics',
+  'Compliance & AI',
+]
 
 export function Hero() {
   return (
@@ -32,10 +35,9 @@ export function Hero() {
             id="hero-title"
             className="text-5xl font-semibold tracking-tight text-balance text-foreground sm:text-6xl md:text-7xl"
           >
-  Beatrice J. Robinson
-  </h1>
+            Beatrice J. Robinson
+          </h1>
 
-  
           <p className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-primary md:text-base">
             {roles.map((role, i) => (
               <span key={role} className="flex items-center gap-3">
@@ -46,7 +48,7 @@ export function Hero() {
           </p>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground md:text-xl">
-            Building data-driven solutions through healthcare, compliance, workforce analytics, program operations, and emerging AI technology.
+            Building data-driven solutions at the intersection of healthcare, compliance, workforce analytics, program operations, and emerging AI technology.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
