@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowDown, Mail, MapPin } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
@@ -24,7 +25,7 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:px-8">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-20 md:px-8 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-1.5 font-mono text-xs text-muted-foreground backdrop-blur">
             <MapPin className="size-3.5 text-primary" aria-hidden="true" />
@@ -77,6 +78,18 @@ export function Hero() {
               Contact Me
             </a>
           </div>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-[280px] animate-in fade-in slide-in-from-bottom-4 duration-1000 lg:max-w-[320px]">
+          <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-2xl" aria-hidden="true" />
+          <Image
+            src="/beatrice-robinson-card-photo.jpg"
+            alt="Beatrice J. Robinson"
+            width={1150}
+            height={1442}
+            priority
+            className="relative aspect-[4/5] w-full rounded-3xl border border-border object-cover shadow-2xl"
+          />
         </div>
       </div>
     </section>
