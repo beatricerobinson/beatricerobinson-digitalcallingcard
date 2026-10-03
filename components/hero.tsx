@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils'
 
 const roles = [
   'Data Analytics & Program Operations',
-  'Healthcare & Workforce Analytics',
-  'Compliance & AI',
+  'Healthcare & Workforce Insights',
+  'Compliance & Emerging AI',
 ]
 
 export function Hero() {
