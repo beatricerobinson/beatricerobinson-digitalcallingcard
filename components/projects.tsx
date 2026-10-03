@@ -3,7 +3,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
-import { FunnelVisual } from '@/components/project-visuals'
+import { AsthmaVisual, FunnelVisual, HealthWarsVisual } from '@/components/project-visuals'
 import { GITHUB_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -18,6 +18,27 @@ const projects = [
     href: 'https://beatricerobinson.github.io/recruitment-disparity-simulator',
     github: false,
     Visual: FunnelVisual,
+  },
+  {
+    title: 'Healthcare Data Analysis with R',
+    category: 'Healthcare Analytics',
+    description:
+      'Analyzes CDC adult asthma prevalence across U.S. states, years, and demographic groups, using a reproducible workflow for data cleaning, exploratory analysis, and clear visualizations.',
+    tech: ['R', 'tidyverse', 'dplyr', 'ggplot2'],
+    cta: 'View Analysis',
+    href: 'https://github.com/beatricerobinson/beatrice-robinson-data-portfolio/tree/main/R-Projects/healthcare-data-analysis',
+    Visual: AsthmaVisual,
+  },
+  {
+    title: 'Health Wars: Quickfire',
+    category: 'Interactive Public Health Game',
+    description:
+      'A real-time public health trivia game for 2–8 players. A host creates a room, friends join with a code, and everyone answers ten timed questions from their own device.',
+    tech: ['Public Health', 'Multiplayer', 'JavaScript', 'Netlify'],
+    cta: 'Play the Game',
+    href: 'https://glistening-malasada-aac885.netlify.app',
+    sourceHref: 'https://github.com/beatricerobinson/health-wars-quickfire',
+    Visual: HealthWarsVisual,
   },
 ]
 
@@ -67,7 +88,7 @@ export function Projects() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-auto pt-8">
+                    <div className="mt-auto flex flex-wrap gap-3 pt-8">
                       <a
                         href={project.href}
                         target="_blank"
@@ -79,6 +100,18 @@ export function Projects() {
                         <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
                         <span className="sr-only">: {project.title} (opens in a new tab)</span>
                       </a>
+                      {project.sourceHref && (
+                        <a
+                          href={project.sourceHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(buttonVariants({ variant: 'outline' }), 'h-10 gap-2 px-4 text-sm')}
+                        >
+                          <GitHubIcon className="size-4" />
+                          View on GitHub
+                          <span className="sr-only">: {project.title} source code (opens in a new tab)</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </article>
