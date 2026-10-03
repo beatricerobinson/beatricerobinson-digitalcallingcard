@@ -1,6 +1,5 @@
 export const GITHUB_URL = 'https://github.com/beatricerobinson'
-export const EMAIL = 'bea_robin@outlook.com'
-export const MAILTO = `mailto:${EMAIL}`
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/bearobin/'
 
 export const NAV_LINKS = [
   { href: '#about', label: 'About' },

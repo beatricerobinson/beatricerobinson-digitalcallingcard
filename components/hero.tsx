@@ -1,8 +1,8 @@
-import { ArrowDown, Mail, MapPin } from 'lucide-react'
+import { ArrowDown, Linkedin, MapPin } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { NetworkBackground } from '@/components/network-background'
-import { GITHUB_URL, MAILTO } from '@/lib/site'
+import { GITHUB_URL, LINKEDIN_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 const roles = [
@@ -70,11 +70,14 @@ export function Hero() {
               <span className="sr-only">(opens in a new tab)</span>
             </a>
             <a
-              href={MAILTO}
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: 'ghost' }), 'h-11 gap-2 px-5 text-sm')}
             >
-              <Mail className="size-4" aria-hidden="true" />
-              Contact Me
+              <Linkedin className="size-4" aria-hidden="true" />
+              LinkedIn
+              <span className="sr-only">(opens in a new tab)</span>
             </a>
           </div>
         </div>

@@ -1,8 +1,8 @@
-import { Mail } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { Reveal } from '@/components/reveal'
-import { EMAIL, GITHUB_URL, MAILTO } from '@/lib/site'
+import { GITHUB_URL, LINKEDIN_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 export function Contact() {
@@ -39,17 +39,19 @@ export function Contact() {
                 <span className="sr-only">(opens in a new tab)</span>
               </a>
               <a
-                href={MAILTO}
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   buttonVariants(),
                   'h-11 gap-2 bg-ink-foreground px-5 text-sm text-ink hover:bg-ink-foreground/90 [a]:hover:bg-ink-foreground/90',
                 )}
               >
-                <Mail className="size-4" aria-hidden="true" />
-                Email Me
+                <Linkedin className="size-4" aria-hidden="true" />
+                LinkedIn
+                <span className="sr-only">(opens in a new tab)</span>
               </a>
             </div>
-            <p className="mt-6 font-mono text-xs text-ink-foreground/60">{EMAIL}</p>
           </div>
         </div>
       </Reveal>

@@ -7,7 +7,7 @@ import { Technology } from '@/components/technology'
 import { CurrentRole } from '@/components/current-role'
 import { Education } from '@/components/education'
 import { Contact } from '@/components/contact'
-import { GITHUB_URL, MAILTO } from '@/lib/site'
+import { GITHUB_URL, LINKEDIN_URL } from '@/lib/site'
 
 export default function Page() {
   return (
@@ -33,8 +33,8 @@ export default function Page() {
             <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
               GitHub
             </a>
-            <a href={MAILTO} className="hover:text-foreground">
-              Email
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+              LinkedIn
             </a>
             <a href="#top" className="hover:text-foreground">
               Back to top
