@@ -1,4 +1,4 @@
-import { Database, HeartPulse, Sparkles } from 'lucide-react'
+import { Code2, Database, HeartPulse, Sparkles } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
@@ -18,6 +18,11 @@ const groups = [
     label: 'Healthcare',
     tools: ['SharePoint', 'VistA', 'Electronic Health Records'],
   },
+  {
+    icon: Code2,
+    label: 'Project Platforms',
+    tools: ['GitHub', 'Vercel', 'Netlify'],
+  },
 ]
 
 export function Technology() {
@@ -26,7 +31,7 @@ export function Technology() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading index="04" eyebrow="Technology" title="Tools I Work With" id="tools-title" />
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {groups.map((group, i) => (
             <Reveal key={group.label} delay={i * 100} className="h-full">
               <div className="h-full rounded-xl border border-border bg-card p-6">
