@@ -7,9 +7,9 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'Beatrice J. Robinson | AI Project Builder & Data Analytics',
+  title: 'Beatrice J. Robinson | Data Analytics & Program Operations',
   description:
-    'Beatrice J. Robinson — AI Project Builder, Data Analytics, and Healthcare & Workforce Analytics professional based in San Antonio, Texas.',
+    'Beatrice J. Robinson — Data Analytics and Program Operations professional focused on healthcare and workforce analytics, compliance, and emerging AI.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -1,4 +1,4 @@
-import { ArrowDown, Linkedin, MapPin } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, MapPin } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { NetworkBackground } from '@/components/network-background'
@@ -75,7 +75,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: 'ghost' }), 'h-11 gap-2 px-5 text-sm')}
             >
-              <Linkedin className="size-4" aria-hidden="true" />
+              <ArrowUpRight className="size-4" aria-hidden="true" />
               LinkedIn
               <span className="sr-only">(opens in a new tab)</span>
             </a>

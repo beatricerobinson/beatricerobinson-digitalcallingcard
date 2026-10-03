@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GitHubIcon } from '@/components/github-icon'
 import { Reveal } from '@/components/reveal'
@@ -47,7 +47,7 @@ export function Contact() {
                   'h-11 gap-2 bg-ink-foreground px-5 text-sm text-ink hover:bg-ink-foreground/90 [a]:hover:bg-ink-foreground/90',
                 )}
               >
-                <Linkedin className="size-4" aria-hidden="true" />
+                <ArrowUpRight className="size-4" aria-hidden="true" />
                 LinkedIn
                 <span className="sr-only">(opens in a new tab)</span>
               </a>
