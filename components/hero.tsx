@@ -48,7 +48,7 @@ export function Hero() {
           </p>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground md:text-xl">
-            Building data-driven solutions at the intersection of healthcare, compliance, workforce analytics, program operations, and emerging AI technology.
+            I turn healthcare and workforce data into clearer reporting, stronger program controls, and better decisions, while exploring practical uses for AI.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
