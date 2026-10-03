@@ -37,11 +37,7 @@ export function About() {
           <div>
             <SectionHeading index="01" eyebrow="About" title="What I Do" id="about-title" className="mb-6 md:mb-6" />
             <p className="leading-relaxed text-pretty text-muted-foreground">
-              Data Analytics and Program Operations professional with 8+ years of experience supporting compliance-driven 
-              programs across federal healthcare, managed care, and health insurance environments. My experience spans healthcare 
-              operations, provider credentialing, physician compensation, workforce analytics, data quality, compliance, program 
-              administration, and executive reporting. I use data, technology, and emerging AI tools to identify problems, 
-              strengthen processes and controls, improve reporting, and support evidence-based organizational decisions.
+              Data Analytics and Program Operations professional with 8+ years of experience supporting compliance-driven programs across federal healthcare, managed care, and health insurance environments. My experience covers healthcare operations, provider credentialing, physician compensation, workforce analytics, data quality, compliance, program administration, and executive reporting. I use data, technology, and emerging AI tools to identify problems, strengthen processes and controls, improve reporting, and support evidence-based organizational decisions.
             </p>
           </div>
 
