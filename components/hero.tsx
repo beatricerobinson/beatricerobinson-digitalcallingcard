@@ -19,12 +19,12 @@ export function Hero() {
       className="relative isolate flex min-h-[92svh] items-center overflow-hidden pt-16"
     >
       <div className="absolute inset-0 -z-10">
+        <NetworkBackground />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-cover bg-center opacity-35"
+          className="absolute inset-0 bg-cover bg-center opacity-55"
           style={{ backgroundImage: "url('/Autumn%20Analytics%20Workspace%20Glow.png')" }}
         />
-        <NetworkBackground />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,var(--background)_20%,transparent_75%)]" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
@@ -57,29 +57,16 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className={cn(buttonVariants(), 'h-11 gap-2 px-5 text-sm')}
-            >
+            <a href="#projects" className={cn(buttonVariants(), 'h-11 gap-2 px-5 text-sm')}>
               View Projects
               <ArrowDown className="size-4" aria-hidden="true" />
             </a>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: 'outline' }), 'h-11 gap-2 bg-card/80 px-5 text-sm backdrop-blur')}
-            >
+            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: 'outline' }), 'h-11 gap-2 bg-card/80 px-5 text-sm backdrop-blur')}>
               <GitHubIcon className="size-4" />
               GitHub
               <span className="sr-only">(opens in a new tab)</span>
             </a>
-            <a
-              href={LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: 'ghost' }), 'h-11 gap-2 px-5 text-sm')}
-            >
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: 'ghost' }), 'h-11 gap-2 px-5 text-sm')}>
               <ArrowUpRight className="size-4" aria-hidden="true" />
               LinkedIn
               <span className="sr-only">(opens in a new tab)</span>
