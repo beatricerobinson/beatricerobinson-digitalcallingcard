@@ -19,6 +19,11 @@ export function Hero() {
       className="relative isolate flex min-h-[92svh] items-center overflow-hidden pt-16"
     >
       <div className="absolute inset-0 -z-10">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-cover bg-center opacity-35"
+          style={{ backgroundImage: "url('/Autumn%20Analytics%20Workspace%20Glow.png')" }}
+        />
         <NetworkBackground />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,var(--background)_20%,transparent_75%)]" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
@@ -81,7 +86,6 @@ export function Hero() {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   )
